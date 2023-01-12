@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="类黄酮 <= 1.445\nentropy = 1.572\nsamples = 124\nvalue = [39, 49, 36]\nclass = 雪莉", fillcolor="#e8fcf0"] ;
+1 [label="颜色强度 <= 3.685\nentropy = 0.641\nsamples = 43\nvalue = [0, 7, 36]\nclass = 贝尔摩德", fillcolor="#9a5fea"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 7\nvalue = [0, 7, 0]\nclass = 雪莉", fillcolor="#39e581"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 36\nvalue = [0, 0, 36]\nclass = 贝尔摩德", fillcolor="#8139e5"] ;
+1 -> 3 ;
+4 [label="酒精 <= 12.785\nentropy = 0.999\nsamples = 81\nvalue = [39, 42, 0]\nclass = 雪莉", fillcolor="#f1fdf6"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="entropy = 0.0\nsamples = 37\nvalue = [0, 37, 0]\nclass = 雪莉", fillcolor="#39e581"] ;
+4 -> 5 ;
+6 [label="脯氨酸 <= 655.0\nentropy = 0.511\nsamples = 44\nvalue = [39, 5, 0]\nclass = 琴酒", fillcolor="#e89152"] ;
+4 -> 6 ;
+7 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 4, 0]\nclass = 雪莉", fillcolor="#39e581"] ;
+6 -> 7 ;
+8 [label="镁 <= 133.0\nentropy = 0.169\nsamples = 40\nvalue = [39, 1, 0]\nclass = 琴酒", fillcolor="#e6843e"] ;
+6 -> 8 ;
+9 [label="entropy = 0.0\nsamples = 39\nvalue = [39, 0, 0]\nclass = 琴酒", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 雪莉", fillcolor="#39e581"] ;
+8 -> 10 ;
+}
